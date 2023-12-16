@@ -13,6 +13,6 @@ def get_population(country_dict):
     values = population_dict.values()
     return labels, values
 
-def population_by_country(data,country):
-    result = list(filter(lambda x: x['CCA3'] == country, data))
+def population_by_country(df,country):
+    result = list(filter(lambda x: x['Country'] == country, df))
     return result 
