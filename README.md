@@ -21,3 +21,11 @@ python3 main.py
 (desactivar entorno virtual)
 deactivate
 ``` 
+Para crear un contenedor en docker
+```sh
+docker-compose build # Para crear el docker
+docker-compose up -d # Para lanzarlo
+docker-compose ps # Para ver el estado del contenedor
+docker-compose exec app-csv bash # Para ingresar al docker y desarrollar ahi
+exit # salir del contenedor
+```
